@@ -21,7 +21,9 @@ tar xzf BBMap_38.97.tar.gz --directory=bbmap-38.97
 
 ## Edit -graal.sh versions of randomgenome.sh and bbduk.sh
 
-make a copy of randgenome.sh and name it randomgenome-graal.sh
+make a copy of randomgenome.sh and name it randomgenome-graal.sh
+
+same thing for bbduk.sh except bbduk-graal.sh
 
 line 59 of randomgenome-graal.sh
 should look like this

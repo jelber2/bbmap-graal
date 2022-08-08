@@ -34,6 +34,7 @@ local CMD="java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCIC
 
 pretty much adding `-XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler ` before `$EA`, same thing for bbduk-graal.sh, except line 366
 
+then make sure the `-graal.sh` versions are executable doing, `chmod u+x bbduk-graal.sh` `chmod randomgenome-graal.sh`
 
 ## Benchmarking scripts
 
@@ -66,11 +67,16 @@ test2-graal.sh
 ```
 
 ## Benchmarking with hyperfine
-https://www.rust-lang.org/tools/install
+
+First install Rust following these instructions https://www.rust-lang.org/tools/install
+
+Then install `hyperfine`
 
 ```sh
 cargo install hyperfine
 ```
+
+Make single-core scripts executable then benchmark
 
 ```sh
 chmod u+x test.sh
@@ -89,6 +95,8 @@ Summary
   './test.sh' ran
     1.00 ± 0.01 times faster than './test-graal.sh'
 ```
+
+Make multi-core scripts executable then benchmark
 
 ```sh
 chmod u+x test2.sh

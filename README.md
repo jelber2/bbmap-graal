@@ -7,8 +7,8 @@ cd /nfs/scistore16/itgrp/jelbers/bin/
 wget https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.2.0/graalvm-ce-java17-linux-amd64-22.2.0.tar.gz
 tar xzf graalvm-ce-java17-linux-amd64-22.2.0.tar.gz
 
-export PATH="/nfs/scistore16/itgrp/jelbers/bin/openj9-jdk17/bin:$PATH"
-export JAVA_HOME=/nfs/scistore16/itgrp/jelbers/bin/openj9-jdk17
+export PATH="/nfs/scistore16/itgrp/jelbers/bin/graalvm-ce-java17-22.2.0/bin:$PATH"
+export JAVA_HOME=/nfs/scistore16/itgrp/jelbers/bin/graalvm-ce-java17-22.2.0
 ```
 
 ## Install BBMap-38.97

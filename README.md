@@ -17,6 +17,9 @@ export JAVA_HOME=/nfs/scistore16/itgrp/jelbers/bin/graalvm-ce-java17-22.2.0
 mkdir -p bbmap-38.97
 wget https://sourceforge.net/projects/bbmap/files/BBMap_38.97.tar.gz
 tar xzf BBMap_38.97.tar.gz --directory=bbmap-38.97
+cd bbmap-38.97
+mv bbmap/* .
+rm -r bbmap/
 ```
 
 ## Edit -graal.sh versions of randomgenome.sh and bbduk.sh

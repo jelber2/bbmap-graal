@@ -57,7 +57,9 @@ test-graal.sh
 
 ### make input for test2 scripts
 
+```sh
 ~/bin/bbmap-38.97/randomgenome.sh len=1000000000 out=test.fasta ow=t seed=1
+```
 
 ### test2 scripts
 
